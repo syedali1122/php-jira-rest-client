@@ -277,9 +277,9 @@ class JiraClient
 
             // don't check 301, 302 because setting CURLOPT_FOLLOWLOCATION
             if ($this->http_response != 200 && $this->http_response != 201) {
-                throw new JiraException('CURL HTTP Request Failed: Status Code : '
-                    .$this->http_response.', URL:'.$url
-                    ."\nError Message : ".$response, $this->http_response, null, $response);
+                //throw new JiraException('CURL HTTP Request Failed: Status Code : '
+                //    .$this->http_response.', URL:'.$url
+                 //   ."\nError Message : ".$response, $this->http_response, null, $response);
             }
         }
 
